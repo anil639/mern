@@ -6,8 +6,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Error404 from "./Pages/Error404";
 //components
-import Navigationbar from "./Components/NavigationBar/Navigationbar";
-import ReactQuesNdAns from "./Components/ReactJs/ReactQuesNdAns";
+import Navigationbar from "./Components/Navigationbar";
+import ReactQuesNdAns from "./Components/ReactQuesNdAns";
+import NodeQuesNdAns from "./Components/NodeQuesNdAns";
+import MongoDBquesNdAns from "./Components/MongoDBquesNdAns";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reactJs" element={<ReactQuesNdAns />} />
-
+        <Route path="/nodeJs" element={<NodeQuesNdAns />} />
+        <Route path="/mongodb" element={<MongoDBquesNdAns />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </div>

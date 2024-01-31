@@ -21,9 +21,9 @@ const Navigationbar = () => {
               <NavDropdown title="Topics" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/reactJs">ReactJs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4">NodeJs</NavDropdown.Item>
+                <NavDropdown.Item href="/nodeJs">NodeJs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">MongoDB</NavDropdown.Item>
+                <NavDropdown.Item href="/mongodb">MongoDB</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">

@@ -2,13 +2,13 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ReactData from "../../Data/React/ReactData";
+import ReactData from "../Data/React/ReactData";
 const ReactQuesNdAns = () => {
   return (
-    <Container>
+    <Container className="mt-5">
       <Row>
         <Col>
-          <h1 className="text-center text-primary mt-5">
+          <h1 className="text-center text-primary mt-5 mb-5">
             React Js Interview Questions
           </h1>
           {ReactData.length > 0 && (
