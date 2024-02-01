@@ -10,7 +10,7 @@ const Navigationbar = () => {
     <div>
       <Navbar fixed="top" expand="lg" bg="dark" data-bs-theme="dark">
         <Container fluid>
-          <Navbar.Brand href="/">Anil kumar Nayak</Navbar.Brand>
+          <Navbar.Brand href="/mern/">MERN</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -19,11 +19,15 @@ const Navigationbar = () => {
               navbarScroll
             >
               <NavDropdown title="Topics" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/reactJs">ReactJs</NavDropdown.Item>
+                <NavDropdown.Item href="/mern/reactJs">
+                  ReactJs
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/nodeJs">NodeJs</NavDropdown.Item>
+                <NavDropdown.Item href="/mern/nodeJs">NodeJs</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/mongodb">MongoDB</NavDropdown.Item>
+                <NavDropdown.Item href="/mern/mongodb">
+                  MongoDB
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">

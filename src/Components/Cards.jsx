@@ -16,9 +16,7 @@ const Cards = () => {
             />
             <Card.Body className="bg-dark text-white">
               <Card.Title>{val.title}</Card.Title>
-              <Card.Text>{val.text}</Card.Text>
-
-              <Button href={`/${val.button}`} variant="primary">
+              <Button href={`/mern/${val.button}`} variant="primary">
                 Q&A
               </Button>
             </Card.Body>

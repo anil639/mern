@@ -15,7 +15,7 @@ const NodeQuesNdAns = () => {
             <ol>
               {NodeData.map((val, id) => (
                 <ol key={id}>
-                  <h1>
+                  <h1 className="mb-4">
                     {id + 1 + "."}
                     {val.Question}
                   </h1>

@@ -6,19 +6,16 @@ const HomeData = [
   {
     image: react,
     title: "React Js",
-    text: "",
     button: "reactJs",
   },
   {
     image: node,
     title: "Node.js",
-    text: "",
     button: "nodeJs",
   },
   {
     image: mongo,
     title: "Mongo DB",
-    text: "",
     button: "mongodb",
   },
 ];
