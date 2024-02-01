@@ -9,7 +9,7 @@ const Navigationbar = () => {
   return (
     <div>
       <Navbar fixed="top" expand="lg" bg="dark" data-bs-theme="dark">
-        <Container fluid>
+        <Container>
           <Navbar.Brand href="/mern/">MERN</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

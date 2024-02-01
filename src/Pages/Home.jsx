@@ -17,8 +17,8 @@ const Home = () => {
           <div className="mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="537.64"
-              height="563.26"
+              width="100%"
+              height="100%"
               viewBox="0 0 537.64 563.26"
               xmlnsa="http://www.w3.org/1999/xlink"
             >
