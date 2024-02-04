@@ -90,12 +90,44 @@ const MongoData = [
       "If the value of a field does not yet exist, the '$set' sets the value. This can be useful for updating schemas or adding user-defined keys.",
   },
   {
-    Question: "",
+    Question: "What do you mean by Transactions?",
+    Answer:
+      "A transaction is a logical unit of processing in a database that includes one or more database operations, which can be read or write operations. Transactions provide a useful feature in MongoDB to ensure consistency.\nMongoDB provides two APIs to use transactions.\n•Core API: It is a similar syntax to relational databases (e.g., start_transaction and commit_transaction)\n•Call-back API: This is the recommended approach to using transactions. It starts a transaction, executes the specified operations, and commits (or aborts on the error). It also automatically incorporates error handling logic for 'TransientTransactionError' and 'UnknownTransactionCommitResult'.",
+  },
+  {
+    Question: "What are MongoDB Charts?",
+    Answer:
+      "MongoDB Charts is a new, integrated tool in MongoDB for data visualization.\nMongoDB Charts offers the best way to create visualizations using data from a MongoDB database.\nIt allows users to perform quick data representation from a database without writing code in a programming language such as Java or Python.\nThe two different implementations of MongoDB Charts are:\nMongoDB Charts PaaS (Platform as a Service)\nMongoDB Charts Server",
+  },
+  {
+    Question: "What is the Aggregation Framework in MongoDB?",
+    Answer:
+      "The aggregation framework is a set of analytics tools within MongoDB that allow you to do analytics on documents in one or more collections.\nThe aggregation framework is based on the concept of a pipeline. With an aggregation pipeline, we take input from a MongoDB collection and pass the documents from that collection through one or more stages, each of which performs a different operation on its inputs (See figure below). Each stage takes as input whatever the stage before it produced as output. The inputs and outputs for all stages are documents—a stream of documents.",
+  },
+  {
+    Question:
+      "Explain the concept of pipeline in the MongoDB aggregation framework?",
+    Answer:
+      "An individual stage of an aggregation pipeline is a data processing unit. It takes in a stream of input documents one at a time, processes each document one at a time, and produces an output stream of documents one at a time.",
+  },
+  {
+    Question: "What is a Replica Set in MongoDB?",
+    Answer:
+      "To keep identical copies of your data on multiple servers, we use replication. It is recommended for all production deployments. Use replication to keep your application running and your data safe, even if something happens to one or more of your servers.\nSuch replication can be created by a replica set with MongoDB. A replica set is a group of servers with one primary, the server taking writes, and multiple secondaries, servers that keep copies of the primary’s data. If the primary crashes, the secondaries can elect a new primary from amongst themselves.",
+  },
+  {
+    Question: "Explain the Replication Architecture in MongoDB?",
     Answer: "",
   },
   {
-    Question: "",
-    Answer: "",
+    Question: "What are some utilities for backup and restore in MongoDB?",
+    Answer:
+      "The mongo shell does not include functions for exporting, importing, backup, or restore. However, MongoDB has created methods for accomplishing this, so that no scripting work or complex GUIs are needed. For this, several utility scripts are provided that can be used to get data in or out of the database in bulk. These utility scripts are:\n• mongoimport\n• mongoexport\n• mongodump\n• mongorestore",
+  },
+  {
+    Question: "Conclusion",
+    Answer:
+      "MongoDB is a powerful, flexible, and scalable general-purpose database. It combines the ability to scale out with features such as secondary indexes, range queries, sorting, aggregations, and geospatial indexes. Thus, in conclusion, MongoDB is:\n• Supports Indexing\n• Designed to scale\n• Rich with Features\n• High Performance\n• Load Balancing\n• Supports sharding\n\nAlthough MongoDB is powerful, incorporating many features from relational systems, it is not intended to do everything that a relational database does. For some functionality, the database server offloads processing and logic to the client-side (handled either by the drivers or by a user’s application code). Its maintenance of this streamlined design is one of the reasons MongoDB can achieve such high performance.",
   },
 ];
 export default MongoData;
