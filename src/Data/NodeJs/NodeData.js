@@ -200,8 +200,101 @@ const NodeData = [
       "The most commonly used HTTP requests are:\nGET: This request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.\nPUT: This request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload. If there are no resources that match the request, it will generate one.\nPOST: This request is used to send data (file, form data, etc.) to the server. On successful creation, it returns an HTTP status code of 201.\nDELETE: This request is used to delete the data on the server at a specified location.",
   },
   {
-    Question: "",
-    Answer: "",
+    Question: "What is a cluster in Node.js?",
+    Answer:
+      "Due to a single thread in node.js, it handles memory more efficiently because there are no multiple threads due to which no thread management is needed. Now, to handle workload efficiently and to take advantage of computer multi-core systems, cluster modules are created that provide us the way to make child processes that run simultaneously with a single parent process.",
+  },
+  {
+    Question: "Explain some of the cluster methods in Node.js?",
+    Answer:
+      "Fork(): It creates a new child process from the master. The isMaster returns true if the current process is master or else false./nisWorker: It returns true if the current process is a worker or else false.\nprocess: It returns the child process which is global.\nsend(): It sends a message from worker to master or vice versa.\nkill(): It is used to kill the current worker.",
+  },
+  {
+    Question: "How to manage sessions in Node.js?",
+    Answer:
+      "Session management can be done in node.js by using the express-session module. It helps in saving the data in the key-value form. In this module, the session data is not saved in the cookie itself, just the session ID.",
+  },
+  {
+    Question: "Explain the types of streams in Node.js?",
+    Answer:
+      "Types of Stream:\nReadable stream: It is the stream from where you can receive and read the data in an ordered fashion. However, you are not allowed to send anything. For example, fs.createReadStream() lets us read the contents of a file.\nWritable stream: It is the stream where you can send data in an ordered fashion but you are not allowed to receive it back. For example, fs.createWriteStream() lets us write data to a file.\nDuplex stream: It is the stream that is both readable and writable. Thus you can send in and receive data together. For example, net.Socket is a TCP socket.\nTransform stream: It is the stream that is used to modify the data or transform it as it is read. The transform stream is basically a duplex in nature. For example, zlib.createGzip stream is used to compress the data using gzip.",
+  },
+  {
+    Question:
+      "How can we implement authentication and authorization in Node.js?",
+    Answer:
+      "Authentication is the process of verifying a user’s identity while authorization is determining what actions can be performed. We use packages like Passport and JWT to implement authentication and authorization.",
+  },
+  {
+    Question: "Explain the packages used for file uploading in Node.js?",
+    Answer:
+      "The package used for file uploading in Node.js is Multer. The file can be uploaded to the server using this module. There are other modules in the market but Multer is very popular when it comes to file uploading. Multer is a node.js middleware that is used for handling multipart/form-data, which is a mostly used library for uploading files.",
+  },
+  {
+    Question:
+      "Explain the difference between Node.js and server-side scripting languages like Python?",
+    Answer:
+      "Node.js is the best choice for asynchronous programming Python is not the best choice for asynchronous programming. Node.js is best suited for small projects to enable functionality that needs less amount of scripting. Python is the best choice if you’re developing larger projects. Node.js is best suited for memory-intensive activities. Not recommended for memory-intensive activities. Node.js is a better option if your focus is exactly on web applications and website development. But, Python is an all-rounder and can perform multiple tasks like- web applications, integration with back-end applications, numerical computations, machine learning, and network programming. Node.js is an ideal and vibrant platform available right now to deal with real-time web applications. Python isn’t an ideal platform to deal with real-time web applications. The fastest speed and great performance are largely due to Node.js being based on Chrome’s V8 which is a very fast and powerful engine. Python is slower than Node.js, As Node.js is based on fast and powerful Chrome’s V8 engine, Node.js utilizes JavaScript interpreter. Python using PyPy as Interpreter. In case of error handling and debugging Python beats Node.js. Error handling in Python takes significantly very little time and debugging in Python is also very easy compared to Node.js.",
+  },
+  {
+    Question: "How to handle database connection in Node.js?",
+    Answer:
+      "To handle database connection in Node.js we use the driver for MySQL and libraries like Mongoose for connecting to the MongoDB database. These libraries provide methods to connect to the database and execute queries.",
+  },
+  {
+    Question: "How to read command line arguments in Node.js?",
+    Answer:
+      "Command-line arguments (CLI) are strings of text used to pass additional information to a program when an application is running through the command line interface of an operating system. We can easily read these arguments by the global object in node i.e. process object. Below is the approach:\nStep 1: Save a file as index.js and paste the below code inside the file.\nlet arguments = process.argv ;\nconsole.log(arguments) ;\nStep 2: Run the index.js file using the below command:\nnode index.js.",
+  },
+  {
+    Question: "Explain the Node.js redis module?",
+    Answer:
+      "Redis is an Open Source store for storing data structures. It is used in multiple ways. It is used as a database, cache, and message broker. It can store data structures such as strings, hashes, sets, sorted sets, bitmaps, indexes, and streams. Redis is very useful for Node.js developers as it reduces the cache size which makes the application more efficient. However, it is very easy to integrate Redis with Node.js applications.",
+  },
+  {
+    Question: "What is web socket?",
+    Answer:
+      "Web Socket is a protocol that provides full-duplex (multiway) communication i.e. allows communication in both directions simultaneously. It is a modern web technology in which there is a continuous connection between the user’s browser (client) and the server. In this type of communication, between the web server and the web browser, both of them can send messages to each other at any point in time. Traditionally on the web, we had a request/response format where a user sends an HTTP request and the server responds to that. This is still applicable in most cases, especially those using RESTful API. But a need was felt for the server to also communicate with the client, without getting polled(or requested) by the client. The server in itself should be able to send information to the client or the browser. This is where Web Socket comes into the picture.",
+  },
+  {
+    Question: "Explain the util module in Node.js?",
+    Answer:
+      "The Util module in node.js provides access to various utility functions. There are various utility modules available in the node.js module library.\nOS Module: Operating System-based utility modules for node.js are provided by the OS module.\nPath Module: The path module in node.js is used for transforming and handling various file paths.\nDNS Module: DNS Module enables us to use the underlying Operating System name resolution functionalities. The actual DNS lookup is also performed by the DNS Module.\nNet Module: Net Module in node.js is used for the creation of both client and server. Similar to DNS Module this module also provides an asynchronous network wrapper.",
+  },
+  {
+    Question: "How to handle environment variables in Node.js?",
+    Answer:
+      "We use process.env to handle environment variables in Node.js. We can specify environment configurations as well as keys in the .env file. To access the variable in the application, we use the “process.env.VARIABLE_NAME” syntax. To use it we have to install the dotenv package using the below command:\nnpm install dotenv",
+  },
+  {
+    Question: "Explain DNS module in Node.js?",
+    Answer:
+      "DNS is a node module used to do name resolution facility which is provided by the operating system as well as used to do an actual DNS lookup. Its main advantage is that there is no need for memorizing IP addresses – DNS servers provide a nifty solution for converting domain or subdomain names to IP addresses.",
+  },
+  {
+    Question: "What are child processes in Node.js?",
+    Answer:
+      "Usually, Node.js allows single-threaded, non-blocking performance but running a single thread in a CPU cannot handle increasing workload hence the child_process module can be used to spawn child processes. The child processes communicate with each other using a built-in messaging system.",
+  },
+  {
+    Question: "How to validate data in Node.js?",
+    Answer:
+      "Validation in node.js can be easily done by using the express-validator module. This module is popular for data validation. There are other modules available in the market like hapi/joi, etc but express-validator is widely used and popular among them.",
+  },
+  {
+    Question: "What is the role of net module in Node.js?",
+    Answer:
+      "The net module in Node.js is used to create TCP client and serve in Node.js. This module establishes connections, handles incoming requests, and share data over the network.",
+  },
+  {
+    Question: "What is tracing in Node.js?",
+    Answer:
+      "The Tracing Objects are used for a set of categories to enable and disable the tracing. When tracing events are created then tracing objects is disabled by calling tracing.enable() method and then categories are added to the set of enabled trace and can be accessed by calling tracing.categories.",
+  },
+  {
+    Question: "What is reactor pattern in node.js?",
+    Answer:
+      "Reactor Pattern is used to avoid the blocking of the Input/Output operations. It provides us with a handler that is associated with I/O operations. When the I/O requests are to be generated, they get submitted to a demultiplexer, which handles concurrency in avoiding the blocking of the I/O mode and collects the requests in the form of an event and queues those events.",
   },
 ];
 export default NodeData;
