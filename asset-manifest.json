@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mern/static/css/main.62d3213f.css",
-    "main.js": "/mern/static/js/main.1c6a242b.js",
+    "main.js": "/mern/static/js/main.b34a1a9a.js",
     "static/media/mongoDb_img.png": "/mern/static/media/mongoDb_img.f9efb4cf07a7dc8a900d.png",
     "static/media/nodeJs_img.png": "/mern/static/media/nodeJs_img.a944ef19fe84ba7371f2.png",
     "index.html": "/mern/index.html",
     "main.62d3213f.css.map": "/mern/static/css/main.62d3213f.css.map",
-    "main.1c6a242b.js.map": "/mern/static/js/main.1c6a242b.js.map"
+    "main.b34a1a9a.js.map": "/mern/static/js/main.b34a1a9a.js.map"
   },
   "entrypoints": [
     "static/css/main.62d3213f.css",
-    "static/js/main.1c6a242b.js"
+    "static/js/main.b34a1a9a.js"
   ]
 }
